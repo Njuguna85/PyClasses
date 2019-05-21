@@ -7,19 +7,18 @@ body{
 
 .box{
     width:300px;
-    padding: 40px;
+    padding: 35px;
     position: absolute;
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
     background:#dff9fb;
     text-align: center;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 8px
 }
 
 .box input[type= "text"],.box input[type="password"]{
-    border: 0;
+   
     background: none;
     display:block;
     margin:10px auto;
@@ -53,7 +52,7 @@ body{
     cursor: pointer;
 }
 .box input[type="submit"]:hover{
-    background:#6ae99f;
+    background:#f13f32;
 }
 
 .box h1{
