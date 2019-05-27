@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Universal Average Height Calculator</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+
+    <form action="{{ url_for('success') }}" method="POST" class="box">
+        <h3>Collecting Heights</h3>
+        <p>Please Fill in the entries to get population statistics on height</p>
+        <p class="message">
+            {{ text| safe}}
+        </p>
+        <input type="email" name="email" required placeholder="Enter your email. Your email is safe with us.">
+        <input type="number" name="height" min="50" max="300" step="0.1" required placeholder="Enter your Height in cm.">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

@@ -4,7 +4,7 @@ import json
 import folium
 
 data = pd.read_csv("volcanoes_usa.txt")
-
+print(type(data))
 # access the data columns
 lat = list(data["LAT"])
 long = list(data["LON"])
@@ -73,7 +73,7 @@ for lt, ln, nm, el, in zip(lat, long, name, elevation):
     Categorized country layer color depending on the population
     Using lambda function and if else statement
     """
-fg_Poly = folium.FeatureGroup(name = "World Population")
+fg_Poly = folium.FeatureGroup(name="World Population")
 fg_Poly.add_child(
     folium.GeoJson(
         data=open("world.json", 'r',

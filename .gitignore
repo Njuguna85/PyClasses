@@ -11,3 +11,4 @@ app9/
 images/
 *.jpg
 *.mp4
+venv/
